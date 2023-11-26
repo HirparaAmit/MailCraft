@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="static/style.css">
+    <title>MailCraft</title>
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+            <p class="name">MailCraft</p>
+            &nbsp;&nbsp; <p>|</p> &nbsp;&nbsp;
+            <p class="tagline">Craft Your Emails with AI Precision!</p>
+        </div>
+        <div class="main">
+            <center><h1 class="title">Unlock Seamless Email Excellence for Effortless Communication</h1></center>
+            <center><p class="subtitle">Craft polished emails 📧 effortlessly at MailCraft. Customize style, word limit, and more for impactful communication. Say goodbye to email stress and hello to simplicity! ✨</p></center>
+            <center>
+                <form class="form" method="post" action="/">
+                    <div class="style-words">
+                        <label for="style">Email Style*</label>&nbsp;
+                        <select id="style" name="style" required>
+                            <option>Professional</option>
+                            <option>Personal</option>
+                            <option>Marketing</option>
+                            <option>Newsletter</option>
+                            <option>Educational</option>
+                            <option>Cold</option>
+                            <option>Networking</option>
+                            <option>Job Application</option>
+                            <option>Feedback</option>
+                            <option>Customer Support</option>
+                        </select>
+                        <label for="words">Word Limit</label>&nbsp;
+                        <input type="number" name="words" id="words" max="1000" min="100" placeholder="100 to 1000">
+                    </div>
+                    <label for="topic">Mail Topic*</label>&nbsp;
+                    <input type="textarea" id="topic" name="topic" placeholder="Write the topic of your mail" required>
+                    <div class="sender-receiver">
+                        <label for="sender">Sender</label>&nbsp;
+                        <input type="text" id="sender" name="sender" placeholder="Name">
+                        <label for="recipient">Recipient</label>&nbsp;
+                        <input type="text" id="recipient" name="recipient" placeholder="Name">
+                    </div>
+                    <button type="submit" class="submit">Submit</button>
+                </form>
+            </center>
+            <center>
+                <div class="output">
+                    <p>{{response}}</p>
+                </div>
+            </center>
+        </div>
+    </div>
+</body>
+</html>

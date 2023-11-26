@@ -1,0 +1,141 @@
+body {
+    margin: 0;
+    background-image: url('./Background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    height: 100%;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.nav{
+    margin: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(to right, #2563eb, #9333ea);
+    color: white;
+}
+
+.nav .name{
+    font-family: 'Rubik', sans-serif;
+}
+
+.nav .tagline{
+    font-family: 'Roboto Slab', serif;
+}
+
+.main {
+    text-align: center;
+    margin-top: 5%;
+}
+
+.main h1{
+    font-family: 'Rubik', sans-serif;
+    font-size: 50px;
+    color: white;
+}
+
+.main p{
+    font-family: 'Roboto Slab', serif;
+    color: white;
+    width: 65%;
+    margin-bottom: 2%;
+}
+
+.form {
+    background: hsla(0,0%,100%,.8);
+    border-radius: 5px;
+    padding: 20px;
+    display: inline-block;
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+    width: 50%;
+    color: #404040;
+    border-radius: 1rem;
+}
+
+.form select{
+    font-family: 'Roboto Slab', serif;
+    height: 40px;
+    font-weight: bold;
+    border: none;
+    border-radius: 0.4rem;
+    text-transform: none;
+    box-shadow: 0 8px 6px -9px #616161;
+}
+
+.form input{
+    font-family: 'Roboto Slab', serif;
+    height: 40px;
+    font-weight: bold;
+    border: none;
+    border-radius: 0.4rem;
+    text-transform: none;
+    box-shadow: 0 8px 6px -9px #616161;
+}
+
+.form .style-words{
+    display: flexbox;
+}
+
+#style{
+    width: 20%;
+    margin-right: 10%;
+}
+
+#words{
+    width: 15%;
+}
+
+#topic{
+    margin-top: 3%;
+    width: 59%;
+    display: flexbox;
+}
+
+.form .sender-receiver{
+    display: flexbox;
+    margin-top: 3%;
+}
+
+#sender{
+    margin-right: 9%;
+}
+
+.submit{
+    margin-top: 3%;
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+    background-color: #404040;
+    color: white;
+    border: none;
+    width: 10%;
+    height: 35px;
+    border-radius: 0.3rem;
+}
+
+.submit:hover{
+    color: #404040;
+    border: #404040 solid 2px;
+    background-color: white;
+    font-weight: bold;
+}
+
+.output {
+    margin-top: 3%;
+    background: hsla(0,0%,100%,.8);
+    border-radius: 5px;
+    padding: 20px;
+    display: inline-block;
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+    width: 50%;
+    height: auto;
+    color: #404040;
+    border-radius: 1rem;
+}
