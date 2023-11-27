@@ -33,6 +33,6 @@ torchvision==0.16.1
 tqdm==4.66.1
 transformers==4.35.2
 typing_extensions==4.8.0
-urllib3==2.1.0
+urllib3
 Werkzeug==3.0.1
 zipp==3.17.0
