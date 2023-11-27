@@ -12,7 +12,7 @@ huggingface-hub
 idna
 importlib-metadata
 itsdangerous
-Jinja
+Jinja2
 MarkupSafe
 mpmath
 networkx
