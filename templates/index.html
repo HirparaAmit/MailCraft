@@ -21,7 +21,7 @@
             <center><h1 class="title">Unlock Seamless Email Excellence for Effortless Communication</h1></center>
             <center><p class="subtitle">Craft polished emails 📧 effortlessly at MailCraft. Customize style, word limit, and more for impactful communication. Say goodbye to email stress and hello to simplicity! ✨</p></center>
             <center>
-                <form class="form" method="post" action="/">
+                <form class="form" method="post" action="/" autocomplete="off">
                     <div class="style-words">
                         <label for="style">Email Style*</label>&nbsp;
                         <select id="style" name="style" required>
@@ -51,11 +51,16 @@
                 </form>
             </center>
             <center>
-                <div class="output">
+                <div class="output" id="output">
                     <p>{{response}}</p>
                 </div>
             </center>
         </div>
     </div>
+
+    <script>
+        var output = document.getElementById("output");
+        output.style.display = "{{display}}";
+    </script>
 </body>
 </html>
